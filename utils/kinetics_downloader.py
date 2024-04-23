@@ -12,12 +12,21 @@ def download_kinetics_class(class_data: pd.DataFrame, download_path: str, log_pa
     os.makedirs(download_path, exist_ok=True)
     class_data = class_data.reset_index()
     k = 0
+
+    # get list of video names in the directory
+    video_names = os.listdir(download_path)
+    video_names = [name.split('.')[0] for name in video_names]
+    video_names = set(video_names)
+
     length = class_data.shape[0]
     lst_name_video = []
     lst_target = []
     for i, row in class_data.iterrows():
         try:
             tag = row['youtube_id']
+            if tag in video_names:
+                print(f"Video {tag} already exists in the directory")
+                continue
             video_url = f"https://www.youtube.com/watch?v={tag}"
             yt = pytube.YouTube(video_url)
             stream = yt.streams.first()
@@ -32,6 +41,7 @@ def download_kinetics_class(class_data: pd.DataFrame, download_path: str, log_pa
                 with open(log_path, 'a') as f:
                     f.write(f"{tag}\n")
 
+            time.sleep(2)
             # ffmpeg_extract_subclip(filename, start_time, end_time, targetname=name_video)
             clip = VideoFileClip(filename).subclip(start_time, end_time)
             # clip = clip.volumex(2)
