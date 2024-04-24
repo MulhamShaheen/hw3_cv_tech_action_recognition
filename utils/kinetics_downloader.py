@@ -43,9 +43,9 @@ def download_kinetics_class(class_data: pd.DataFrame, download_path: str, log_pa
 
             time.sleep(2)
             # ffmpeg_extract_subclip(filename, start_time, end_time, targetname=name_video)
-            clip = VideoFileClip(filename).subclip(start_time, end_time)
+            # clip = VideoFileClip(filename).subclip(start_time, end_time)
             # clip = clip.volumex(2)
-            clip.write_videofile(filename)
+            # clip.write_videofile(filename)
 
             k += 1
             lst_name_video.append(name_video)

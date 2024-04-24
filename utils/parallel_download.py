@@ -30,6 +30,6 @@ def download_kinetics_class_multithreaded(class_data: pd.DataFrame, download_pat
 class_data = pd.read_csv("../data/kinetics_700/dancing.csv")
 # count time
 start_time = time.time()
-download_kinetics_class_multithreaded(class_data, "../data/kinetics_700/videos", "log.txt", num_threads=8)
+download_kinetics_class_multithreaded(class_data, "../data/kinetics_700/videos_2", "log.txt", num_threads=8)
 end_time = time.time()
 print(f"Time taken: {end_time - start_time} seconds") #160
