@@ -59,10 +59,3 @@ def download_kinetics_class(class_data: pd.DataFrame, download_path: str, log_pa
 
     class_data = pd.DataFrame({'video': lst_name_video, 'label': lst_target})
     return class_data
-
-
-# class_data = pd.read_csv("../data/kinetics_700/dancing.csv")
-# start_time = time.time()
-# download_kinetics_class(class_data.iloc[:8], "../data/kinetics_700/videos", "log.txt")
-# end_time = time.time()
-# print(f"Time taken: {end_time - start_time} seconds") # Time taken: .2661943435669 seconds
