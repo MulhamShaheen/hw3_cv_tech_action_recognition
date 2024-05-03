@@ -45,7 +45,7 @@ def apply_video_augmentations(video, transform):
     targets = {'image': video[0]}
     for i in range(1, video.shape[0]):
         targets[f'image{i}'] = video[i]
-    transformed = transform(**targets)
+    transformed = transform(*video)
     transformed = np.concatenate(
         [np.expand_dims(transformed['image'], axis=0)]
         + [np.expand_dims(transformed[f'image{i}'], axis=0) for i in range(1, video.shape[0])]
