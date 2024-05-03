@@ -13,7 +13,8 @@ def read_video_pyav(container, indices):
             break
         if i >= start_index and i in indices:
             frames.append(frame)
-    return np.stack([x.to_ndarray(format="rgb24") for x in frames])
+    return frames
+
 
 
 def write_video(name, video, frame_sample_rate):
