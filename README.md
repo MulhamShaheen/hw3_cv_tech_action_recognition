@@ -43,4 +43,4 @@
 Результаты:
 - test accuracy 0.2053
 - loss:
-  <img alt="imags/img.png" src="E:\AI Talent Hub\CV Tech\hw5_action_recognition\imags\img.png" width="200px"/> 
+  <img alt="imags/img.png" src="imags\img.png" width="200px"/> 
