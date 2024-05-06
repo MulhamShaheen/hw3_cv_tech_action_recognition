@@ -1,4 +1,4 @@
-# Action Recognition
+~~# Action Recognition
 
 Команда 7: Никита Хозин, Антон Володин, Мульхам Шахин
 
@@ -17,14 +17,13 @@
 
 ## 1.2. Обучение модели
 
-Для обучения на отдельных кадрах, была выбрана модель ResNet34. В нотбуке `kinetics_frames_experements.ipynb`
+Для обучения на отдельных кадрах, была выбрана модель ResNet18. В нотбуке `kinetics_frames_experements.ipynb`
 описан процесс обучения модели.
 
 Результаты: (обучения ещё в [процессе](https://colab.research.google.com/drive/1JWfH7iF8s7Sk_BndAoJTv_6xvf-8U2gz?usp=sharing))
 
-- Accuracy на валидации: ***
-- F1 на тесте: ***
-- Loss: ***
+- Accuracy на валидации: 0.05797
+- F1 на валидации: 0.04173
 
 # 2. Обучение модели на keypoint'ах
 
