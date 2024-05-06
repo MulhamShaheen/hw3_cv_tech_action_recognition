@@ -22,9 +22,11 @@
 
 Результаты: (обучения ещё в [процессе](https://colab.research.google.com/drive/1JWfH7iF8s7Sk_BndAoJTv_6xvf-8U2gz?usp=sharing))
 
-- Accuracy на валидации: 0.05797
-- F1 на валидации: 0.04173
+- Accuracy на валидации: 0.1111
+- F1 на валидации: 0.03174
 
+![imags/loss_pre_epoch.png](imags/loss_per_epoch.png)
+![imags/loss_pre_step.png](imags/loss_per_step.png)
 # 2. Обучение модели на keypoint'ах
 
 ## 2.1. Подготовка данных
