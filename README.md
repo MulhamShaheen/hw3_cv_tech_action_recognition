@@ -22,12 +22,18 @@
 
 Результаты на валидации:
 
-- Accuracy на валидации: 0.06884
-- F1 на валидации: 0.06462
-- Min loss: 1.98
+- Accuracy на валидации: 0.2887
+- F1 на валидации: 0.2673
+- Min loss: 0.51788
 
 В ноутбуке `resnet18_validation_frames.ipynb` можно посмотреть визуализацию предсказаний модели на валидации.
+Гиперпараметры модели:
+- batch_size = 32
+- lr = 0.001
+- num_epochs = 55
+- optimizer = Adam
 
+Подробнее можно посмотреть на Kaggle: [ссылка](https://www.kaggle.com/code/mulhamshaheen/notebookaec67ecbfa?scriptVersionId=176254902)
 ### Mean train loss per epoch
 - Первый график — график обучения на удаленной машине (30 эпох)
 - Второй график — график обучения на коллабе (последние 10 эпох)
