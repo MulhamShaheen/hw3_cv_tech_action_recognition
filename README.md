@@ -20,11 +20,13 @@
 Для обучения на отдельных кадрах, была выбрана модель ResNet18. В нотбуке `kinetics_frames_experements.ipynb`
 описан процесс обучения модели.
 
-Результаты: (обучения ещё в [процессе](https://colab.research.google.com/drive/1JWfH7iF8s7Sk_BndAoJTv_6xvf-8U2gz?usp=sharing))
+Результаты на валидации:
 
 - Accuracy на валидации: 0.06884
 - F1 на валидации: 0.06462
 - Min loss: 1.98
+
+В ноутбуке `resnet18_validation_frames.ipynb` можно посмотреть визуализацию предсказаний модели на валидации.
 
 ### Mean train loss per epoch
 - Первый график — график обучения на удаленной машине (30 эпох)
