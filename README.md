@@ -36,7 +36,7 @@
 - num_epochs = 55
 - optimizer = Adam
 
-Подробнее можно посмотреть на Kaggle: [ссылка](https://www.kaggle.com/code/mulhamshaheen/notebookaec67ecbfa?scriptVersionId=176254902)
+Подробнее можно посмотреть на Kaggle: [ссылка](https://www.kaggle.com/code/mulhamshaheen/notebookaec67ecbfa/notebook)
 ### Mean train loss per epoch
 - Первый график — график обучения на удаленной машине (30 эпох)
 - Второй график — график обучения на коллабе (последние 10 эпох)
