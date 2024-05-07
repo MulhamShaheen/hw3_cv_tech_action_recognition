@@ -26,6 +26,9 @@
 - F1 на валидации: 0.2673
 - Min loss: 0.51788
 
+<img alt="imags/confusion metrics.png" src="imags/confusion metrics.png" width="400"/>
+
+
 В ноутбуке `resnet18_validation_frames.ipynb` можно посмотреть визуализацию предсказаний модели на валидации.
 Гиперпараметры модели:
 - batch_size = 32
