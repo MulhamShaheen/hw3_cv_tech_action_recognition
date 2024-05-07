@@ -24,8 +24,17 @@
 
 - Accuracy на валидации: 0.06884
 - F1 на валидации: 0.06462
+- Min loss: 1.98
 
-![imags/loss_pre_epoch.png](imags/loss_per_epoch.png)
+### Mean train loss per epoch
+- Первый график — график обучения на удаленной машине (30 эпох)
+- Второй график — график обучения на коллабе (последние 10 эпох)
+
+<img alt="imags/loss_pre_epoch.png" src="imags/loss_per_epoch.png" width="400"/>
+<img alt="imags/loss_per_epoch_last_10.png" src="imags/loss_per_epoch_last_10.png" width="400"/>
+
+### Train loss per step 
+
 ![imags/loss_pre_step.png](imags/loss_per_step.png)
 # 2. Обучение модели на keypoint'ах
 
